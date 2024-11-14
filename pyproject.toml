@@ -13,3 +13,7 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[dependency-groups]
+lint = ["mypy>=1.13.0", "yapf>=0.43.0"]
+test = ["expects>=0.9.0", "doublex>=1.9.6.1", "pytest>=8.3.3", "doublex-expects>=0.7.1", "pytest-xdist>=3.6.1"]
